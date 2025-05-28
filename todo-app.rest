@@ -18,3 +18,26 @@ Content-Type: application/json
     "username": "gilgamesh@gmail.com",
     "password": "123123123"
 }
+
+### Fetch all todos GET/Todos (protected)
+GET http://localhost:5000/todos 
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4NDUzMzEzLCJleHAiOjE3NDg1Mzk3MTN9.gxAU3JPPmFtthmxoJ2A_uXjFhs40Uc7AfOr5RwT2cYU
+
+
+### Create a new todo POST/Todo (protected)
+POST http://localhost:5000/todos 
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4NDUzMzEzLCJleHAiOjE3NDg1Mzk3MTN9.gxAU3JPPmFtthmxoJ2A_uXjFhs40Uc7AfOr5RwT2cYU
+Content-Type: application/json
+
+{
+    "task": "Finish coding the projets"
+}
+
+### Update a todo PUT/TODOS/ID (proteted)
+PUT http://localhost:5000/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4NDUzMzEzLCJleHAiOjE3NDg1Mzk3MTN9.gxAU3JPPmFtthmxoJ2A_uXjFhs40Uc7AfOr5RwT2cYU
+Content-Type: application/json
+
+{
+    "completed": 1
+}
