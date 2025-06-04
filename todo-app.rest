@@ -21,12 +21,12 @@ Content-Type: application/json
 
 ### Fetch all todos GET/Todos (protected)
 GET http://localhost:5000/todos 
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4NDUzMzEzLCJleHAiOjE3NDg1Mzk3MTN9.gxAU3JPPmFtthmxoJ2A_uXjFhs40Uc7AfOr5RwT2cYU
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4OTc1Nzk0LCJleHAiOjE3NDkwNjIxOTR9.ca86i8iiqqsu9qiWKGjRwq73Uf-aMI_47VIVQl-tKEg
 
 
 ### Create a new todo POST/Todo (protected)
 POST http://localhost:5000/todos 
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4NDUzMzEzLCJleHAiOjE3NDg1Mzk3MTN9.gxAU3JPPmFtthmxoJ2A_uXjFhs40Uc7AfOr5RwT2cYU
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4OTc1Nzk0LCJleHAiOjE3NDkwNjIxOTR9.ca86i8iiqqsu9qiWKGjRwq73Uf-aMI_47VIVQl-tKEg
 Content-Type: application/json
 
 {
@@ -34,10 +34,14 @@ Content-Type: application/json
 }
 
 ### Update a todo PUT/TODOS/ID (proteted)
-PUT http://localhost:5000/todos/2
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4NDUzMzEzLCJleHAiOjE3NDg1Mzk3MTN9.gxAU3JPPmFtthmxoJ2A_uXjFhs40Uc7AfOr5RwT2cYU
+PUT http://localhost:5000/todos/1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4OTc1Nzk0LCJleHAiOjE3NDkwNjIxOTR9.ca86i8iiqqsu9qiWKGjRwq73Uf-aMI_47VIVQl-tKEg
 Content-Type: application/json
 
 {
     "completed": 1
 }
+### Delete a todo DELETE/TODOS/ID (proteted)
+DELETE http://localhost:5000/todos/1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4OTc1Nzk0LCJleHAiOjE3NDkwNjIxOTR9.ca86i8iiqqsu9qiWKGjRwq73Uf-aMI_47VIVQl-tKEg
+
